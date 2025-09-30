@@ -20,6 +20,6 @@ body:
     attributes:
       label: "Detalles de la tarea"
       description: "Descripción de lo que se debe hacer, explicar qué pasos o acciones se deben realizar para completar la tarea."
-      placeholder: "Actualizar la documentación del módulo X, 1. Revisar documentación actual\n2. Actualizar sección de API\n3. Enviar revisión para aprobación"
+      placeholder: "Actualizar la documentación del módulo X, \n1. Revisar documentación actual\n2. Actualizar sección de API\n3. Enviar revisión para aprobación"
     validations:
       required: true
