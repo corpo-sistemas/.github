@@ -1,0 +1,22 @@
+name: Reporte de bug
+description: Llenar un reporte de bug
+title: "[Bug]: "
+type: bug
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: "Descripción del problema"
+      description: "Describe de manera clara y concisa cuál es el error, puedes indicar cual es el comportamiento esperado y cual es el comportamiento actual."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Pasos para reproducir"
+      description: "Especifica los pasos necesarios para reproducir el error"
+      placeholder: "1. Ve a '...'\n2. Haz clic en '...'\n3. Desplázate hacia '...'\n4. Observa el error"
+      render: markdown
+    validations:
+      required: true

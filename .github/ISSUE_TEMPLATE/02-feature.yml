@@ -1,0 +1,34 @@
+name: "Nueva característica, módulo o función"
+description: "Sugerencia de una nueva funcionalidad para cualquier sistema."
+title: "[Feature]: "
+type: feature
+body:
+  - type: dropdown
+    id: tipo
+    attributes:
+      label: "Tipo de implementación"
+      description: "Selecciona la opción que corresponda:"
+      options:
+        - "Mejora de una función existente"
+        - "Implementación de una nueva funcionalidad"
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: "Descripción de la nueva característica"
+      description: "Descripción clara y concisa de la funcionalidad a implementar o mejorar."
+      placeholder: "Me gustaría que tenga una función de..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: justification
+    attributes:
+      label: "Justificación"
+      description: "Indica y justifica por qué es necesario implementar esta mejora o funcionalidad."
+      placeholder: "Necesito esta funcionalidad ya que me ayuda a resolver x situación."
+      render: markdown
+    validations:
+      required: true
